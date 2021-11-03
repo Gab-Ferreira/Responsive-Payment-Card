@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url(./pattern-background-desktop.svg) no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display";
+}
+
+.heroDiv {
+  background-color: hsl(225, 100%, 98%);
+  width: 400px;
+  height: 625px;
+  margin: 155px auto;
+  border-radius: 25px;
+  display: flexbox;
+  box-shadow: 0px 10px 10px 1px rgba(85, 79, 79, 0.2);
+}
+
+#hero {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px 25px 0 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+}
+
+#firstText {
+  text-align: center;
+  padding: 5px 50px;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+
+.price {
+  display: flex;
+  background-color: #edf1fa;
+  border-radius: 10px;
+  width: 80%;
+  margin: 25px 10% 0 10%;
+  height: 70px;
+}
+
+button {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;
+  border-style: none;
+  margin: 40px 10% 20px 10%;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px 0px hsl(245, 75%, 52%, 0.3);
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 13px;
+}
+
+#lien {
+  text-decoration: none;
+}
+
+#cancel {
+  text-align: center;
+  font-weight: 700;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+#divChange {
+  margin: 25px 20px 25px 60px;
+  font-size: 15px;
+}
+#musicNote {
+  width: 50px;
+  height: 50px;
+  margin: 10px 10px;
+}
+
+.lesTextes {
+  display: flexbox;
+  width: 160px;
+}
+
+#annual {
+  font-weight: 800;
+  margin: 11px 0 0 0;
+}
+
+#prix {
+  font-weight: 500;
+  opacity: 0.6;
+  margin: 4px 0 0 0;
+}
+
+/* ========================MEDIA QUERIES FOR PHONE======================== */
+
+@media (max-width: 375px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background: url(./pattern-background-mobile.svg) no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+  }
+
+  .heroDiv {
+    background-color: hsl(225, 100%, 98%);
+    width: 87%;
+    height: 70%;
+    margin: 50px auto;
+    border-radius: 25px;
+    display: flexbox;
+    box-shadow: 0px 10px 10px 1px rgba(85, 79, 79, 0.2);
+  }
+
+  #hero {
+    width: 100%;
+    height: 160px;
+    border-radius: 25px 25px 0 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 23px;
+    margin: 25px 0 0 0;
+  }
+
+  #firstText {
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.5;
+    line-height: 25px;
+  }
+
+  .price {
+    display: flex;
+    background-color: #edf1fa;
+    border-radius: 10px;
+    width: 80%;
+    margin: 25px 10% 0 10%;
+    height: 75px;
+  }
+
+  button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 25px 10% 25px 10%;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 0px hsl(245, 75%, 52%, 0.3);
+    font-family: "Red Hat Display";
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  #lien {
+    text-decoration: none;
+  }
+
+  #cancel {
+    text-align: center;
+    font-weight: 700;
+    opacity: 0.5;
+    padding: 0 0 30px 0;
+    margin: 0;
+  }
+
+  #divChange {
+    margin: 25px 20px 25px 20px;
+    font-size: 14px;
+  }
+  #musicNote {
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+  }
+
+  .lesTextes {
+    display: flexbox;
+    width: 180px;
+  }
+
+  #annual {
+    font-weight: 800;
+    margin: 14px 0 0 0;
+    font-size: 15px;
+  }
+
+  #prix {
+    font-weight: 500;
+    opacity: 0.6;
+    margin: 4px 0 0 0;
+    font-size: 15px;
+  }
+}
